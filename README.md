@@ -1,1 +1,1 @@
-# Created a Note Keeper web app using HTML, CSS, and JavaScript, facilitating seamless note management. Implemented features for creating, editing, and deleting notes, utilizing browser local storage for data persistence. Applied responsive CSS design for enhanced usability across devices.
+#Created a Note Keeper web app using HTML, CSS, and JavaScript, facilitating seamless note management. Implemented features for creating, editing, and deleting notes, utilizing browser local storage for data persistence. Applied responsive CSS design for enhanced usability across devices.
