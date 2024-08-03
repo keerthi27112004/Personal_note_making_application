@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('background.jpg'); /* Use your provided background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-attachment: fixed; /* Keep the background image fixed during scroll */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    color: #333;
+    text-align: center; /* Center text alignment */
+    padding-top: 20px; /* Add padding to top for spacing */
+}
+
+header {
+    margin-bottom: 30px; /* Add space below header */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #16282e;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center notes horizontally */
+    padding-top: 60px; /* Add padding to top for better spacing */
+}
+
+#addBtn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #2d3436;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+
+#addBtn:hover {
+    background-color: #636e72; /* Darker color on hover */
+}
+
+.note {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.937);
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Ensure child elements stay within the note's boundaries */
+    position: relative; /* Enable positioning for child elements */
+}
+
+.tool {
+    width: 100%;
+    background-color: rgba(45, 52, 54, 0.9); /* Semi-transparent background */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.tool i {
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover {
+    color: #d63031; /* Change icon color on hover */
+}
+
+.note textarea {
+    border: none;
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust height to account for the tool bar */
+    resize: none;
+    padding: 55px 15px 15px; /* Add padding to top, left, and right */
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    background-color: transparent; /* Transparent background */
+    color: #333;
+    overflow: auto; /* Add scrollbars if needed */
+}
+
+.note textarea:focus {
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background on focus */
+}
+
+footer {
+    background-color: rgba(45, 52, 54, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
